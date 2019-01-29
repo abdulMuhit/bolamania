@@ -1,0 +1,19 @@
+{
+    "name": "Bola Mania",
+    "short_name": "Bola Mania",
+    "description": "Bola Mania news app",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#7496ee",
+    "theme_color": "#7496ee",
+    "icons": [
+        {
+            "src": "./img/goal.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "scope": "/",
+    "gcm_sender_id": "303365840332"
+}

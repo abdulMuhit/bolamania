@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Bola Mania</title>
+    <meta name="description" content="Bola Mania"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"
+          type="image/x-icon"
+          href="./img/favicon.ico">
+    <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#7496ee"/>
+</head>
+<body>
+
+<div id="app">
+    <nav class="nav-extended">
+        <div class="nav-wrapper teal lighten-2">
+            <router-link to="/" class="brand-logo"><img class="logo" src="./img/favicon.ico" alt="logo"></router-link>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><router-link to="/"> Home</router-link></li>
+                <li><router-link to="/about"> About</router-link></li>
+                <li><router-link to="/spaBookmarked"> Bookmarked</router-link></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="sidenav" id="mobile-demo">
+        <img class="logo" src="./img/favicon.ico" alt="logo">
+        <ul>
+            <li><router-link to="/"> Home</router-link></li>
+            <li><router-link to="/about"> About</router-link></li>
+            <li><router-link to="/spaBookmarked"> Bookmarked </router-link></li>
+        </ul>
+    </div>
+
+
+    <router-view></router-view>
+
+    <footer class="page-footer teal lighten-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Bola Mania</h5>
+                    <p class="grey-text text-lighten-4">Semua tentang bola.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container router">
+                © 2018 by Abdul Muhit
+                <router-link class="grey-text text-lighten-4 right" to="/"> Home</router-link>
+            </div>
+        </div>
+    </footer>
+
+    <div class="preloader-background" id="loaderOverlay">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/idb.js"></script>
+<script src="lib/axios.js"></script>
+<script src="lib/vue.js"></script>
+<script src="lib/vue-router.js"></script>
+<script src="js/materialize.min.js"></script>
+
+<!--<script src="faker/faker.js"></script>-->
+
+<script src="js/idbdicoding.js"></script>
+
+<script src="js/vue_components/loaderoverlay_goback.js"></script>
+<script src="js/vue_components/home.js"></script>
+<script src="js/vue_components/page_about.js"></script>
+<script src="js/vue_components/page_bookmarked.js"></script>
+<script src="js/vue_components/page_fixtures.js"></script>
+<script src="js/vue_components/page_team.js"></script>
+<script src="js/app.js"></script>
+<script src="js/registersw.js"></script>
+
+</body>
+</html>
